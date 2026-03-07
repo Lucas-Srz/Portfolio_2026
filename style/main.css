@@ -1,5 +1,8 @@
 /* Import */
 @import url('variable.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('navbar.css');
 
 *{
     box-sizing: border-box;
@@ -7,26 +10,59 @@
     padding: 0;
 }
 
+body{
+    background-color: var(--color-background-primary); 
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-background-primary);
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 /* ********************** CSS MOBILE FISRT ********************** */
-
-/* *************** CSS POUR Tablette / Ordinateur *************** */
-/* XXX plus grand ou égale à XXXpx */
-
-
 /* Mobile < 427px */
 
+.btn{
+    padding: 12px 24px;
+    border-radius: 3px;
+    transition: 0.5s;
+    gap: 8px;
 
+    img{
+        width: 20px;
+    }
+}
+
+.backgroundColorBtn{background-color: var(--color-primary);}
+.backgroundColorBtn:hover{background-color: var(--color-secondary);}
+
+
+
+
+/* *************** CSS Tablette *************** */
 /* Tablette ≥ 426px */
 @media screen and (min-width: 426px) {
-
 }
 
+/* *************** CSS LapTop *************** */
 /* LapTop (NoteBock) ≥ 769px */
 @media screen and (min-width: 769px) {
-
 }
 
+/* *************** CSS Desktop *************** */
 /* Desktop ≥ 1025px */
 @media screen and (min-width: 1025px) {
-
+    
 }

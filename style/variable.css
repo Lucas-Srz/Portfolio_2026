@@ -1,5 +1,19 @@
 /* Variable */
 :root{
-    --color-white: rgb(255,255,255);
-    --color-black: rgb(0,0,0);
+    --color-primary: rgb(227,139,41);
+    --color-secondary: rgb(199,106,26);
+    --color-text-primary: rgb(74,45,33);
+    --color-text-secondary: rgb(122,74,50);
+    --color-background-primary: rgb(255, 244, 236);
+    --color-background-secondary: rgb(255,255,255);
+    --color-accent: rgb(241,213,194);
+    --color-: rgba(0,0,0,0.5);
+
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    --font-family-primary: "Poppins", sans-serif;
+    --font-weight-primary: 600;
+    --font-family-secondary: "Roboto";
+    --font-weight-secondary: 500;
+    --font-family-text: "Inter";
+    --font-weight-text: 400; */
 }
