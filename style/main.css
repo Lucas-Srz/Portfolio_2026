@@ -21,13 +21,14 @@ a{
     color: var(--color-background-primary);
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
 h2{color: var(--color-primary);}
+h3{color: var(--color-text-primary);}
 
 a{
     font-family: "Roboto", sans-serif;
@@ -76,6 +77,51 @@ section:nth-child(n + 2) {
 .backgroundColorBtn:hover{background-color: var(--color-secondary);}
 
 .waveSeparator{fill: var(--color-primary); width: 100%; height: 50px;}
+
+.card {
+    background-color: var(--color-background-secondary);
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    flex-direction: column-reverse;
+
+    .cardContent{
+        .cardContentDate {
+            margin: 10px 0 20px 0;
+            color: var(--color-gray);
+        }
+
+        .cardContentIcon{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+
+            span{
+                padding: 6px 12px;
+                background-color: var(--color-background-primary);
+                border-radius: 8px;
+                font-size: small;
+                color: var(--color-text-primary);
+                display: flex;
+                align-items: center;
+                gap: 3px;
+
+                img{display: none;}
+            }
+        }
+    }
+    
+    .cardImg{
+        img{
+            width:100%;
+            border-radius: 8px;
+            border: 1px solid black;
+        }
+    }
+}
 
 #about{
     display: flex;
@@ -127,6 +173,15 @@ section:nth-child(n + 2) {
     }
 }
 
+#project{
+    #cardGroup{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 25px 0;
+    }
+}
+
 /* *************** CSS Tablette *************** */
 /* Tablette ≥ 426px */
 @media screen and (min-width: 426px) {
@@ -136,6 +191,30 @@ section:nth-child(n + 2) {
 /* LapTop (NoteBock) ≥ 769px */
 @media screen and (min-width: 769px) {
     .waveSeparator{height: 75px;}
+
+    .card {
+        gap: 40px;
+        padding: 40px;
+        flex-direction: row;
+        align-items: center;
+
+        .cardContent{
+            flex: 1;
+
+            .cardContentIcon{
+                span{
+                    img{
+                        display: flex;
+                        width: 25px;
+                    }
+                }
+            }
+        }
+
+        .cardImg{
+            flex: 1;
+        }
+    }
 
     #about{
         #aboutContent{
