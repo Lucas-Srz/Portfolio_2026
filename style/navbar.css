@@ -48,7 +48,7 @@ nav{
         z-index: 1;
         height: 40%;
         width: 100%;
-        top: calc(-40% + 70px);
+        top: -40%;
         background-color: var(--color-primary);
         transition: top 0.5s ease;
         padding-top: 70px;
@@ -114,7 +114,6 @@ nav{
         }
 
         #navDivMenu{
-            top: calc(-40% + 110px);
             padding-top: 110px;
         }
     }
