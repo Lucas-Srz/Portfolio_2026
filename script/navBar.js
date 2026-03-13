@@ -7,9 +7,9 @@ navHeaderBtnBurger.addEventListener("click", () => {
     navDivMenu.classList.toggle("active");
 
     if(navDivMenu.classList.contains("active")){
-        navHeaderBtnBurgerIcon.src = "/media/icons/cross.svg";
+        navHeaderBtnBurgerIcon.src = "media/icons/cross.svg";
     }else{
-        navHeaderBtnBurgerIcon.src = "/media/icons/bars.svg";
+        navHeaderBtnBurgerIcon.src = "media/icons/bars.svg";
     }
 
 });
