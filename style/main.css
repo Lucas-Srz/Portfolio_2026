@@ -16,12 +16,12 @@ body{
     background-color: var(--color-background-primary);
 }
 
-a{
+a, button{
     text-decoration: none;
     color: var(--color-background-primary);
 }
 
-h1, h2, h3{
+h1, h2, h3, .formTitle{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -30,13 +30,13 @@ h1, h2, h3{
 h2{color: var(--color-primary);}
 h3{color: var(--color-text-primary);}
 
-a{
+a, button{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-p{
+p, input, label, textarea{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -44,6 +44,8 @@ p{
     text-align: justify;
     line-height: 1.5;
 }
+
+button{border: 0;}
 
 section:nth-child(n + 2) {
     margin-top: 25px;
@@ -182,6 +184,41 @@ section:nth-child(n + 2) {
     }
 }
 
+#contact{
+    form{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            border: 0;
+
+            label{color: var(--color-gray);}
+        }
+
+        div, button{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+
+        input, textarea{
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid var(--color-gray);
+        }
+
+        input:focus, textarea:focus{
+            border: 2px solid var(--color-primary);
+
+            
+        }
+    }
+}
+
 /* *************** CSS Tablette *************** */
 /* Tablette ≥ 426px */
 @media screen and (min-width: 426px) {
@@ -244,6 +281,19 @@ section:nth-child(n + 2) {
                 width: 260px;
                 border-radius: 12px;
                 box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            }
+        }
+    }
+
+    #contact{
+        form{
+            fieldset{
+                flex-direction: row;
+                gap: 50px;
+            }
+
+            div{
+                width: 100%;
             }
         }
     }
