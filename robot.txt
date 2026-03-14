@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://lucas-srz.github.io/Portfolio_2026/sitemap.xml
