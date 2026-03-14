@@ -154,10 +154,10 @@ nav{
         padding: 12px 24px;
         border-radius: 3px;
         transition: 0.5s;
+        display: flex;
         gap: 8px;
         background-color: var(--color-background-secondary);
-
-        a{color: var(--color-text-primary);}
+        color: var(--color-text-primary);
 
         img{
             display: flex;

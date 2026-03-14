@@ -69,6 +69,7 @@ section:nth-child(n + 2) {
     border-radius: 3px;
     transition: 0.5s;
     width: fit-content;
+    cursor: pointer;
 
     img{
         width: 20px;
