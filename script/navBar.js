@@ -2,7 +2,18 @@ const navHeaderBtnBurger = document.getElementById("navHeaderBtnBurger");
 const navHeaderBtnBurgerIcon = document.getElementById("navHeaderBtnBurgerIcon");
 const navDivMenu = document.getElementById("navDivMenu");
 
-navHeaderBtnBurger.addEventListener("click", () => {
+const aboutBtn = document.getElementById("aboutBtn");
+const contactBtn = document.getElementById("contactBtn");
+
+navHeaderBtnBurger.addEventListener("click", toggleNavBar);
+aboutBtn.addEventListener("click", toggleNavBar);
+contactBtn.addEventListener("click", toggleNavBar);
+
+function toggleNavBar (){
+
+    if(typeof banner != "undefined"){
+        banner.classList.add("none");
+    }
 
     navDivMenu.classList.toggle("active");
 
@@ -11,5 +22,4 @@ navHeaderBtnBurger.addEventListener("click", () => {
     }else{
         navHeaderBtnBurgerIcon.src = "media/icons/bars.svg";
     }
-
-});
+};
