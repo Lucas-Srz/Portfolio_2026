@@ -63,6 +63,20 @@ section:nth-child(n + 2) {
 /* ********************** CSS MOBILE FISRT ********************** */
 /* Mobile < 427px */
 
+#banner{
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    button{
+        padding: 5px;
+        background-color: var(--color-text-secondary);
+    }
+}
+
+#banner.none{display: none;}
+
 .linkUnderline{
     padding-bottom: 3px;
     padding-left: 5px;
