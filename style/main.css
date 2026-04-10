@@ -63,6 +63,30 @@ section:nth-child(n + 2) {
 /* ********************** CSS MOBILE FISRT ********************** */
 /* Mobile < 427px */
 
+#buttonTop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+
+    width: 32px;
+    height: 32px;
+    background-color: rgb(255,194,111);
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 24px;
+        }
+    }
+}
+
 #banner{
     padding: 15px;
     display: flex;
