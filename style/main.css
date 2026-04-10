@@ -23,7 +23,7 @@ a, button{
     color: var(--color-background-primary);
 }
 
-h1, h2, h3, .formTitle{
+h1, h2, h3, .contactFormTitle{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -50,7 +50,7 @@ p, input, label, textarea{
 button{border: 0;}
 
 section:nth-child(n + 2) {
-    margin-top: 25px;
+    margin-top: 100px;
 }
 
 .container{
@@ -59,6 +59,9 @@ section:nth-child(n + 2) {
     margin-right: auto;
     padding: 0 20px;
 }
+
+.none{display: none;}
+.flex{display: flex;}
 
 /* ********************** CSS MOBILE FISRT ********************** */
 /* Mobile < 427px */
@@ -255,13 +258,14 @@ section:nth-child(n + 2) {
             label{color: var(--color-gray);}
         }
 
-        div, button{
+        .contactFormGroup, button{
             display: flex;
             flex-direction: column;
             margin-top: 15px;
         }
 
         input, textarea{
+            padding: 10px;
             padding: 10px;
             border-radius: 5px;
             outline: none;
@@ -272,6 +276,44 @@ section:nth-child(n + 2) {
             border: 2px solid var(--color-primary);
 
             
+        }
+
+        #contactFormConsent{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            font-size: small;
+            label, a{color: black;}
+            .consentLink{text-decoration: underline;}
+        }
+
+        #contactFormMessage{
+            border-radius: 5px;
+            padding: 10px;
+            width: fit-content;
+            flex-direction: column;
+            margin-top: 15px;
+            
+            img{height: 24px;}
+
+            div{
+                display: flex;
+                flex-direction: row;
+                margin-top: 0;
+                gap: 6px;
+
+                #contactFormMessageTitre{font-weight: bold; color: black;}
+            }
+            #contactFormMessageText{padding-left: 30px; color: black;}
+        }
+
+        .success{
+            background-color: #E6F4EA;
+            border: 2px solid #7FBF9B;
+        }
+        .danger{
+            background-color: #FDEAEA;
+            border: 2px solid #E5A4A4;
         }
     }
 }

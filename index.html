@@ -12,6 +12,8 @@
     <script src="script/navBar.js" defer></script><!-- JS -->
     <script src="script/banner.js" defer></script><!-- JS -->
     <script src="script/buttonTop.js" defer></script><!-- JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script/contactForm.js" defer></script>
 </head>
 
 <body>
@@ -263,28 +265,49 @@
             <div class="container">
                 <h2>Me contacter</h2>
                 <p>Une question ou un projet ? N'hésitez pas à me contacter.</p>
-                <form action="#" method="post">
+                <form id="contactForm">
                     <fieldset>
-                        <legend class="formTitle">Nom</legend>
-                        <div>
-                            <input type="text" id="lastName" required>
-                            <label for="lastName">Prénom</label>
+                        <legend class="contactFormTitle">Nom</legend>
+                        <div class="contactFormGroup">
+                            <input type="text" name="firstName" id="firstName" required>
+                            <label for="firstName">Prénom</label>
                         </div>
-                        <div>
-                            <input type="text" id="firstName" required>
+                        <div class="contactFormGroup">
+                            <input type="text" name="lastName" id="lastName" required>
                             <label for="lastName">Nom</label>
                         </div>
                     </fieldset>
-                    <div>
-                        <label for="lastName" class="formTitle">E-mail</label>
-                        <input type="email" id="lastName" required>
+                    <div class="contactFormGroup">
+                        <label for="email" class="contactFormTitle">E-mail</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
-                    <div>
-                        <label for="message" class="formTitle">Commentaire ou message</label>
-                        <textarea id="message" rows="5" required></textarea>
+                    <div class="contactFormGroup">
+                        <label for="subject" class="contactFormTitle">Sujet</label>
+                        <input type="text" name="subject" id="subject" required>
+                    </div>
+                    <div class="contactFormGroup">
+                        <label for="message" class="contactFormTitle">Message</label>
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                    </div>
+                    <div class="contactFormGroup" id="contactFormConsent">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">
+                            J'accepte que mes données soient utilisées pour être recontacté dans le cadre de ma demande.
+                            Pour en savoir plus, consultez la
+                            <a href="#" target="_blank" class="consentLink">politique de confidentialité</a>.
+                        </label>
                     </div>
                     <button type="submit" class="btn backgroundColorBtn">Envoyer</button>
+
+                    <div id="contactFormMessage" class="none success">
+                        <div>
+                            <img src="" alt="" id="contactFormMessageImg">
+                            <p id="contactFormMessageTitre"></p>
+                        </div>
+                        <p id="contactFormMessageText"></p>
+                    </div>
                 </form>
+
             </div>
         </section>
 
