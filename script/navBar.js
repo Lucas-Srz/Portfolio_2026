@@ -5,6 +5,8 @@ const navDivMenu = document.getElementById("navDivMenu");
 const aboutBtn = document.getElementById("aboutBtn");
 const contactBtn = document.getElementById("contactBtn");
 
+const test = document.getElementById("navHeader");
+
 navHeaderBtnBurger.addEventListener("click", toggleNavBar);
 aboutBtn.addEventListener("click", toggleNavBar);
 contactBtn.addEventListener("click", toggleNavBar);
@@ -19,7 +21,9 @@ function toggleNavBar (){
 
     if(navDivMenu.classList.contains("active")){
         navHeaderBtnBurgerIcon.src = "media/icons/cross.svg";
+        test.style.position = "fixed";
     }else{
         navHeaderBtnBurgerIcon.src = "media/icons/bars.svg";
+        test.style.position = "relative";
     }
 };
