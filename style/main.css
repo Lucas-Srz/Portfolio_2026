@@ -38,7 +38,7 @@ a, button{
     font-style: normal;
 }
 
-p, input, label, textarea{
+p, ul, input, label, textarea{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -343,6 +343,24 @@ footer{
     a{color: var(--color-text-primary);}
 
     .filter{filter: brightness(0) saturate(100%) invert(17%) sepia(35%) saturate(667%) hue-rotate(333deg) brightness(95%) contrast(94%);}
+}
+
+#legalNotice, #privacyPolicy{
+    div{
+        margin-top: 50px;
+
+        h3, p, a, ul{color: black;}
+
+        a{font-style: italic; text-decoration: underline;}
+
+        h3{text-decoration: underline; padding-bottom: 15px;}
+
+        span{font-weight: bold;}
+
+        .space{padding-bottom: 8px;}
+
+        ul{padding-left: 25px;}
+    }
 }
 
 /* *************** CSS Tablette *************** */
